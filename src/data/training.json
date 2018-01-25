@@ -1,0 +1,18 @@
+{
+  "Vélo": [
+    "Cardio",
+    "Jambe",
+    "Dos"
+  ],
+  "Natation": [
+    "Respiration",
+    "Endurance",
+    "Bras",
+    "Cuisse"
+  ],
+  "Musculation": [
+    "Biceps",
+    "Abdominaux",
+    "Triceps"
+  ]
+}
