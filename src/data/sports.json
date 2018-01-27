@@ -1,5 +1,5 @@
 [
-    "Vélo",
-    "Natation",
-    "Musculation"
+  { "value": "Vélo" },
+  { "value": "Natation" },
+  { "value": "Musculation" }
 ]

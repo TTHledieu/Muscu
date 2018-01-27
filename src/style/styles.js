@@ -6,19 +6,25 @@ import { StyleSheet } from 'react-native';
     },
     sport: {
       flex: 2,
-      flexDirection: 'row',      
+      flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#F5ABDF',    
+      backgroundColor: '#F5ABDF',
     },
-    muscle: {
+    training: {
       flex: 3,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
       backgroundColor: '#F5BCCD',      
       
     },
     exercise: {
       flex: 5,
       backgroundColor: '#F2ADBF',      
+    },
+    button: {
+      padding: 15
     }
   });
   export default styles;

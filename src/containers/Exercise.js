@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 
-import styles from './style/styles';
+import styles from '../style/styles';
 
 export default class Exercise extends Component {
   render() {
