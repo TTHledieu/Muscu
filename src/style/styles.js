@@ -16,11 +16,13 @@ import { StyleSheet } from 'react-native';
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#F5BCCD',      
-      
+      backgroundColor: '#F5BCCD',   
     },
     exercise: {
       flex: 5,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
       backgroundColor: '#F2ADBF',      
     },
     button: {

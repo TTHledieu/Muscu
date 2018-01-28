@@ -1,0 +1,56 @@
+{
+  "Vélo": {
+      "Cardio": [
+        {"value": "Course lente"},
+        {"value": "Fractionné"},
+        {"value": "Sprint"}
+      ],
+      "Jambe": [
+        {"value": "Marathon"},
+        {"value": "Développer couché"},
+        {"value": "Sprint"},
+        {"value": "Pente"},
+      ],
+      "Dos": [
+        {"value": "En Y"}
+      ],
+  },
+  "Natation": {
+      "Respiration": [
+        {"value": "Apnée régulière"},
+        {"value": "Exercices Divers"}
+      ],
+      "Endurance": [
+        {"value": "Longueur"},
+        {"value": "Longue brasse"}
+      ],
+      "Bras": [
+        {"value": "Papillon"},
+        {"value": "Crawl"}
+      ],
+      "Cuisse": [
+        {"value": "Battement"},
+        {"value": "Brasse"},
+        {"value": "Nage palmée"}
+      ],
+      "Épaule": [
+        {"value": "Crawl"},
+        {"value": "Dos crawlé"}
+      ]
+  },
+  "Musculation": {
+      "Biceps": [
+        {"value": "Curl barre"},
+        {"value": "Curl haltère"}
+      ],
+      "Abdominaux": [
+        {"value": "Crunch"},
+        {"value": "Sit-up"},
+        {"value": "Planche"},
+      ],
+      "Triceps": [
+        {"value": "Kick back"},
+        {"value": "Développé couché"}
+      ]
+  }
+}

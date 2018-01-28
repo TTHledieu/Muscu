@@ -1,18 +1,19 @@
 {
   "Vélo": [
-    "Cardio",
-    "Jambe",
-    "Dos"
+    {"value": "Cardio"},
+    {"value": "Jambe"},
+    {"value": "Dos"}
   ],
   "Natation": [
-    "Respiration",
-    "Endurance",
-    "Bras",
-    "Cuisse"
+    {"value": "Respiration"},
+    {"value": "Endurance"},
+    {"value": "Bras"},
+    {"value": "Cuisse"},
+    {"value": "Épaule"}
   ],
   "Musculation": [
-    "Biceps",
-    "Abdominaux",
-    "Triceps"
+    {"value": "Biceps"},
+    {"value": "Abdominaux"},
+    {"value": "Triceps"}
   ]
 }

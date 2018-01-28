@@ -1,5 +1,5 @@
-import * as SportsActions from './sport'
+import * as selectActions from './select'
 
 export const ActionsCreator = Object.assign({},
-  SportsActions
+  selectActions
 );

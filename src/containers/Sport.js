@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import {
   Platform,
   Text,
   View
 } from 'react-native'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import InputButton from '../components/InputButton'
-
 import { ActionsCreator } from '../actions'
+
+import InputButton from '../components/InputButton'
 
 import styles from '../style/styles'
 
@@ -28,7 +28,7 @@ class Sport extends Component {
           sports.map((sport, index) => (
             <View style={styles.button} key={index} >
               <InputButton 
-                sport={sport.value}
+                field={sport.value}
                 onPress={() => this.onPress(sport.value)}
               />
             </View>
@@ -41,7 +41,7 @@ class Sport extends Component {
 }
 
 Sport.PropTypes = {
-  selectSport: PropTypes.func
+  selectSport: PropTypes.func,
 }
 
 const mapDispatchToProps = {
@@ -49,7 +49,7 @@ const mapDispatchToProps = {
 }
 
 const mapStateToProps = (state) => ({
-  selectedSport: state.selectedSport
+  selectedFields: state.selectedFields
 })
 
 export default connect(

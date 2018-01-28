@@ -13,18 +13,16 @@ import styles from '../style/styles'
 class InputButton extends Component {
   render () {
     return (
-      <View style={styles.sport}>
-        <Button onPress={() => this.props.onPress()}>
-          {this.props.sport}
-        </Button>
-      </View>
+      <Button onPress={() => this.props.onPress()}>
+        <Text>{this.props.field}</Text>
+      </Button>
     )
   }
 }
 
 InputButton.PropTypes = {  
   onPress: PropTypes.func,
-  sport: PropTypes.string
+  field: PropTypes.string
 }
 
 export default InputButton

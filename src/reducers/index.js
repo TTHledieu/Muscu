@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import * as sportsReducer from './sport'
+import * as selectReducer from './select'
 
 export default combineReducers(Object.assign(
-    sportsReducer,
+    selectReducer,
 ));
