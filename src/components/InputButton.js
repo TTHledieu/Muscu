@@ -13,7 +13,8 @@ import styles from '../style/styles'
 class InputButton extends Component {
   render () {
     return (
-      <Button onPress={() => this.props.onPress()}>
+      <Button
+      onPress={() => this.props.onPress()}>
         <Text>{this.props.field}</Text>
       </Button>
     )

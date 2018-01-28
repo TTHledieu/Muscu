@@ -5,25 +5,25 @@ import { StyleSheet } from 'react-native';
       flex: 1
     },
     sport: {
-      flex: 2,
+      zIndex: 3,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#F5ABDF',
     },
     training: {
-      flex: 3,
+      zIndex: 2,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#F5BCCD',   
     },
     exercise: {
-      flex: 5,
+      zIndex: 0,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#F2ADBF',      
+      backgroundColor: '#F2ADBF', 
     },
     button: {
       padding: 15

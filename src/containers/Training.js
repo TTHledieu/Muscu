@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {
   Platform,
   Text,
-  View
+  View,
+  LayoutAnimation
 } from 'react-native';
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
@@ -16,21 +17,23 @@ import styles from '../style/styles'
 import trainings from '../data/training.json'
 
 class Training extends Component {
-  
+
   onPress = (selectedTraining) => {
+    LayoutAnimation.spring()
     this.props.selectTraining(selectedTraining)
   }
 
   getTrainings = () => {
     if (this.props.selectedFields.sport) {
-      return trainings[this.props.selectedFields.sport]
+      return trainings[this.props.selectedFields.sport.field]
     }
     return []
   }
 
   render() {
+    const isEmpty = Object.keys(this.props.selectedFields).length
     return (
-      <View style={styles.training}>
+      <View style={[styles.training, {flex: !isEmpty ? 0 : this.props.selectedFields.training.flex}]}>
         {
           this.getTrainings().map((training, index) => (
             <View style={styles.button} key={index} >

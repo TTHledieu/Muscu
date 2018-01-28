@@ -25,14 +25,16 @@ class Exercise extends Component {
 
   getExercises = () => {
     if (this.props.selectedFields.sport && this.props.selectedFields.training) {
-      return exercise[this.props.selectedFields.sport][this.props.selectedFields.training]
+      const { field } = this.props.selectedFields.training
+      return !field ? [] : exercise[this.props.selectedFields.sport.field][this.props.selectedFields.training.field]
     }
     return []
   }
 
   render() {
+    const isEmpty = Object.keys(this.props.selectedFields).length
     return (
-      <View style={styles.exercise}>
+      <View style={[styles.exercise, {flex: !isEmpty ? 0 : this.props.selectedFields.exercise.flex}]}>
         {
           this.getExercises().map((exercise, index) => (
             <View style={styles.button} key={index} >
@@ -44,7 +46,7 @@ class Exercise extends Component {
           ))
         }
       </View>
-    );S
+    )
   }
 }
 

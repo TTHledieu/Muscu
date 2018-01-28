@@ -1,44 +1,26 @@
-import createReducer from '../lib/createReducer'
 import * as types from '../actions/types'
 
 export const selectedFields = (state = {}, action) => {
   switch (action.type) {
     case types.SELECT_SPORT:
-    console.log('DANS SELECT SPORT')
     return Object.assign({}, state, {
-      sport: action.sport,
-      training: '',
-      exercise: ''
+      sport: { field: action.sport, flex: 5 },
+      training: { field: '', flex: 5 },
+      exercise: { field: '', flex: 0 }
     })
     case types.SELECT_TRAINING:
-    console.log('DANS SELECT TRAINING')
     return Object.assign({}, state, {
-      sport: state.sport,
-      training: action.training,
-      exercise: ''
+      sport: { ...state.sport, flex: 2 },
+      training: { field: action.training, flex: 3 },
+      exercise: { field: '', flex: 5 }
     })
     case types.SELECT_EXERCISE:
-    console.log('DANS SELECT TRAINING')
     return Object.assign({}, state, {
-      sport: state.sport,
-      training: state.training,
-      exercise: action.exercise
+      sport: { ...state.sport, flex: 2 },
+      training: { ...state.training, flex: 3 },
+      exercise: { field: action.exercise, flex: 5 }
     })
     default:
     return state
   }
 }
-
-// export const selectedSport = createReducer('', {
-//   [types.SELECT_SPORT](state, action) {
-//     console.log('LE GROS STATE', state)
-//     return action.sport
-//   }
-// })
-
-// export const selectedTraining = createReducer('', {
-//   [types.SELECT_TRAINING](state, action) {
-//     console.log(state, action)
-//     return action.training
-//   }
-// })
